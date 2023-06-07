@@ -13,21 +13,37 @@ private:
 public:
 
 	Animal(std::string gender, std::string name, float price, int amount) :_gender(gender), _name(name), _price(price), _amount(amount) {}
-	std::string GetGender();
+	std::string GetGender() {
+		return _gender;
+	}
 
-	void SetGender(std::string gender);
+	void SetGender(std::string gender) {
+		_gender = gender;
+	}
 
-	std::string GetName();
+	std::string GetName() {
+		return _name;
+	}
 
-	void SetName(std::string name);
+	void SetName(std::string name) {
+		_name = name;
+	}
 
-	float GetPrice();
+	float GetPrice() {
+		return _price;
+	}
 
-	void SetPrice(float price);
+	void SetPrice(float price) {
+		_price = price;
+	}
 
-	int GetAmount();
+	int GetAmount() {
+		return _amount;
+	}
 
-	void SetAmount(int amount);
+	void SetAmount(int amount) {
+		_amount = amount;
+	}
 
 };
 
